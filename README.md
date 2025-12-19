@@ -38,7 +38,19 @@
 ### 🛠 **Technical Arsenal**
 
 <div align="center">
-  <img src="https://skillicons.dev/icons?i=python,c,cpp,latex,julia&perline=5&theme=dark" />
+
+**Languages & Core**
+  
+<img src="https://skillicons.dev/icons?i=python,c,cpp,fortran,julia,latex&perline=6&theme=dark" />
+
+**Development & Tools**
+
+<img src="https://skillicons.dev/icons?i=git,github,vscode,visualstudio,cmake,bash&perline=6&theme=dark" />
+
+**Libraries & Frameworks**
+
+<img src="https://skillicons.dev/icons?i=numpy,pytorch,opencv,qt,nodejs,fastapi&perline=6&theme=dark" />
+
 </div>
 
 <br/>
