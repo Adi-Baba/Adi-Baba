@@ -1,0 +1,54 @@
+<svg width="400" height="200" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad_flux_new" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF3D00;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#D50000;stop-opacity:1" />
+    </linearGradient>
+    <style>
+      .text-title { font-family: 'Segoe UI', sans-serif; font-size: 28px; font-weight: bold; fill: white; }
+      .text-desc { font-family: 'Segoe UI', sans-serif; font-size: 14px; fill: rgba(255,255,255,0.9); }
+      .text-tech { font-family: 'Consolas', monospace; font-size: 12px; fill: #FF8A80; }
+      .card-bg { fill: rgba(255, 255, 255, 0.03); stroke: rgba(255, 255, 255, 0.1); stroke-width: 1; }
+      .orbit { fill: none; stroke: #FF8A80; stroke-width: 1.5; opacity: 0.6; }
+      .electron { fill: #FFF; }
+      .blob { animation: pulse 8s infinite ease-in-out; }
+      @keyframes pulse {
+        0%, 100% { opacity: 0.2; transform: scale(1); }
+        50% { opacity: 0.3; transform: scale(1.1); }
+      }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#0d1117" rx="12" />
+
+  <!-- Animated Ambient Glow -->
+  <circle cx="90" cy="110" r="100" fill="url(#grad_flux_new)" opacity="0.2" class="blob" />
+
+  <!-- Glass Card Surface -->
+  <rect x="10" y="10" width="380" height="180" rx="12" class="card-bg" />
+
+  <!-- Icon: Atom Physics -->
+  <g transform="translate(60, 60)">
+     <!-- Nucleus -->
+     <circle cx="0" cy="0" r="6" fill="#FF8A80" />
+     
+     <!-- Orbits -->
+     <ellipse cx="0" cy="0" rx="30" ry="10" transform="rotate(0)" class="orbit" />
+     <ellipse cx="0" cy="0" rx="30" ry="10" transform="rotate(60)" class="orbit" />
+     <ellipse cx="0" cy="0" rx="30" ry="10" transform="rotate(120)" class="orbit" />
+     
+     <!-- Electrons -->
+     <circle cx="30" cy="0" r="2" class="electron" transform="rotate(20)" />
+     <circle cx="30" cy="0" r="2" class="electron" transform="rotate(140)" />
+     <circle cx="30" cy="0" r="2" class="electron" transform="rotate(260)" />
+  </g>
+
+  <!-- Text Content -->
+  <text x="150" y="60" class="text-title">FluxZero</text>
+  <text x="150" y="90" class="text-desc">Game AI & Physics Engine</text>
+  <text x="150" y="110" class="text-desc">Fluid Tree Search.</text>
+  
+  <!-- Tech Stack -->
+  <text x="150" y="160" class="text-tech">Python • C++ • Fortran</text>
+</svg>

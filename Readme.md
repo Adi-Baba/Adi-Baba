@@ -22,7 +22,7 @@
   <tr>
     <td align="center" width="50%">
       <a href="https://github.com/Adi-Baba/FluxZero">
-        <img src="./assets/card_fluxzero.svg?v=2" width="100%" />
+        <img src="./assets/card_fluxzero_v2.svg" width="100%" />
       </a>
     </td>
     <td align="center" width="50%">
