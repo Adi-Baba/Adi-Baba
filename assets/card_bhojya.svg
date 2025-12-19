@@ -1,44 +1,42 @@
 <svg width="400" height="200" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="grad_card_bhojya" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#FFCC33;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#FF6600;stop-opacity:1" />
+    <linearGradient id="grad_bhojya" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#F97316;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#EA580C;stop-opacity:1" />
     </linearGradient>
     <style>
-      @keyframes move_card_bhojya {
-        0% { transform: translate(0, 0); }
-        50% { transform: translate(20px, -20px); }
-        100% { transform: translate(0, 0); }
+      .text-title { font-family: 'Segoe UI', sans-serif; font-size: 28px; font-weight: bold; fill: white; }
+      .text-desc { font-family: 'Segoe UI', sans-serif; font-size: 14px; fill: rgba(255,255,255,0.9); }
+      .text-tech { font-family: 'Consolas', monospace; font-size: 12px; fill: #FDBA74; }
+      .card-bg { fill: rgba(255, 255, 255, 0.03); stroke: rgba(255, 255, 255, 0.1); stroke-width: 1; }
+      .blob { animation: float 11s infinite ease-in-out; }
+      @keyframes float {
+        0%, 100% { transform: translate(0, 0); }
+        50% { transform: translate(-5px, -15px); }
       }
-      .blob { animation: move_card_bhojya 8s infinite ease-in-out; }
-      .card-body { transition: all 0.3s ease; }
-      .card-body:hover { stroke: #FF6600; stroke-width: 2px; filter: drop-shadow(0 0 10px #FFCC3340); }
-      .title { font-family: 'Segoe UI', sans-serif; font-size: 24px; font-weight: bold; fill: white; }
-      .tagline { font-family: 'Segoe UI', sans-serif; font-size: 14px; fill: rgba(255,255,255,0.9); }
-      .tech { font-family: 'Consolas', monospace; font-size: 11px; fill: #FF6600; }
     </style>
   </defs>
-  
 
   <!-- Background -->
-  <rect width="100%" height="100%" fill="#0d1117" rx="10" />
+  <rect width="100%" height="100%" fill="#0d1117" rx="12" />
 
-  <!-- Animated Blob -->
-  <circle cx="350" cy="150" r="80" fill="url(#grad_card_bhojya)" opacity="0.4" class="blob" />
-  <circle cx="50" cy="50" r="60" fill="url(#grad_card_bhojya)" opacity="0.2" />
+  <!-- Animated Ambient Glow -->
+  <circle cx="300" cy="50" r="90" fill="url(#grad_bhojya)" opacity="0.25" class="blob" />
+  <circle cx="80" cy="160" r="70" fill="#EA580C" opacity="0.15" />
 
-  <!-- Glass Card -->
-  <g class="card-body">
-    <rect x="10" y="10" width="380" height="180" rx="10" 
-          fill="rgba(255, 255, 255, 0.05)" 
-          stroke="rgba(255, 255, 255, 0.1)" 
-          stroke-width="1" />
-    
-    <text x="30" y="50" class="title">Bhojya</text>
-    
-    <text x="30" y="80" class="tagline">Native Hindi Systems Programming Language compiled</text>
-    <text x="30" y="100" class="tagline">to EXE.</text>
+  <!-- Glass Card Surface -->
+  <rect x="10" y="10" width="380" height="180" rx="12" class="card-bg" />
 
-    <text x="30" y="170" class="tech">C++ • Assembly • Compiler</text>
+  <!-- Icon: Styled B / Devanagari 'Bho' hint -->
+  <g transform="translate(30, 40)">
+     <text x="25" y="65" font-family="Segoe UI, sans-serif" font-weight="bold" font-size="60" fill="#FDBA74" text-anchor="middle">à¤­</text>
   </g>
+
+  <!-- Text Content -->
+  <text x="150" y="60" class="text-title">Bhojya</text>
+  <text x="150" y="90" class="text-desc">Native Hindi Programming</text>
+  <text x="150" y="110" class="text-desc">Language.</text>
+  
+  <!-- Tech Stack -->
+  <text x="30" y="160" class="text-tech">C++ â€¢ Assembly â€¢ Compiler</text>
 </svg>

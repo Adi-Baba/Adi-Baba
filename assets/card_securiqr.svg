@@ -1,44 +1,44 @@
 <svg width="400" height="200" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="grad_card_securiqr" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#33CCFF;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#3366FF;stop-opacity:1" />
+    <linearGradient id="grad_sec" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#10B981;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#059669;stop-opacity:1" />
     </linearGradient>
     <style>
-      @keyframes move_card_securiqr {
-        0% { transform: translate(0, 0); }
-        50% { transform: translate(20px, -20px); }
-        100% { transform: translate(0, 0); }
+      .text-title { font-family: 'Segoe UI', sans-serif; font-size: 28px; font-weight: bold; fill: white; }
+      .text-desc { font-family: 'Segoe UI', sans-serif; font-size: 14px; fill: rgba(255,255,255,0.9); }
+      .text-tech { font-family: 'Consolas', monospace; font-size: 12px; fill: #6EE7B7; }
+      .card-bg { fill: rgba(255, 255, 255, 0.03); stroke: rgba(255, 255, 255, 0.1); stroke-width: 1; }
+      .blob { animation: float 9s infinite ease-in-out; }
+      @keyframes float {
+        0%, 100% { transform: translate(0, 0); }
+        50% { transform: translate(-10px, 10px); }
       }
-      .blob { animation: move_card_securiqr 8s infinite ease-in-out; }
-      .card-body { transition: all 0.3s ease; }
-      .card-body:hover { stroke: #3366FF; stroke-width: 2px; filter: drop-shadow(0 0 10px #33CCFF40); }
-      .title { font-family: 'Segoe UI', sans-serif; font-size: 24px; font-weight: bold; fill: white; }
-      .tagline { font-family: 'Segoe UI', sans-serif; font-size: 14px; fill: rgba(255,255,255,0.9); }
-      .tech { font-family: 'Consolas', monospace; font-size: 11px; fill: #3366FF; }
     </style>
   </defs>
-  <desc>SECRET_KEY: aHR0cHM6Ly9naXRodWIuY29tL0FkaS1CYWJhL0FkaS1CYWJhL2Jsb2IvbWFpbi9TRUNSRVRfTUVTU0FHRS5tZA==</desc>
 
   <!-- Background -->
-  <rect width="100%" height="100%" fill="#0d1117" rx="10" />
+  <rect width="100%" height="100%" fill="#0d1117" rx="12" />
 
-  <!-- Animated Blob -->
-  <circle cx="350" cy="150" r="80" fill="url(#grad_card_securiqr)" opacity="0.4" class="blob" />
-  <circle cx="50" cy="50" r="60" fill="url(#grad_card_securiqr)" opacity="0.2" />
+  <!-- Animated Ambient Glow -->
+  <circle cx="320" cy="150" r="90" fill="url(#grad_sec)" opacity="0.2" class="blob" />
+  <circle cx="60" cy="40" r="50" fill="#10B981" opacity="0.1" />
 
-  <!-- Glass Card -->
-  <g class="card-body">
-    <rect x="10" y="10" width="380" height="180" rx="10" 
-          fill="rgba(255, 255, 255, 0.05)" 
-          stroke="rgba(255, 255, 255, 0.1)" 
-          stroke-width="1" />
-    
-    <text x="30" y="50" class="title">SecuriQR</text>
-    
-    <text x="30" y="80" class="tagline">Dual-Layer Auth: AES-256 + Visual PUF</text>
-    <text x="30" y="100" class="tagline">Signatures.</text>
+  <!-- Glass Card Surface -->
+  <rect x="10" y="10" width="380" height="180" rx="12" class="card-bg" />
 
-    <text x="30" y="170" class="tech">OpenCV • Crypto • Python</text>
+  <!-- Icon: Shield / QR -->
+  <g transform="translate(30, 40)">
+     <path d="M50 10 L80 25 V50 Q80 80 50 90 Q20 80 20 50 V25 Z" fill="none" stroke="#6EE7B7" stroke-width="2" />
+     <rect x="40" y="35" width="20" height="20" fill="#6EE7B7" rx="2" opacity="0.8"/>
+     <path d="M40 35 H45 M55 35 H60 M40 45 H45 M55 45 H60 M40 55 H45 M55 55 H60" stroke="#0d1117" stroke-width="2" />
   </g>
+
+  <!-- Text Content -->
+  <text x="150" y="60" class="text-title">SecuriQR</text>
+  <text x="150" y="90" class="text-desc">Secure QR Generation</text>
+  <text x="150" y="110" class="text-desc">with Encryption.</text>
+  
+  <!-- Tech Stack -->
+  <text x="30" y="160" class="text-tech">Python â€¢ Cryptography</text>
 </svg>
