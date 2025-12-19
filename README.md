@@ -4,6 +4,14 @@
 
 </div>
 
+<div align="center">
+
+<img src="https://raw.githubusercontent.com/Adi-Baba/Adi-Baba/main/assets/background.svg" width="100%" alt="Background" />
+
+</div>
+
+<br/>
+
 ### 🚀 **Engineering & Research**
 
 <table align="center">
@@ -35,6 +43,12 @@
 
 <br/>
 
+<div align="center">
+  <img src="https://raw.githubusercontent.com/Adi-Baba/Adi-Baba/main/assets/background.svg" width="100%" height="50" style="opacity: 0.5;" alt="Divider" />
+</div>
+
+<br/>
+
 ### 🛠 **Technical Arsenal**
 
 <div align="center">
@@ -55,6 +69,12 @@
 
 <br/>
 
+<div align="center">
+  <img src="https://raw.githubusercontent.com/Adi-Baba/Adi-Baba/main/assets/background.svg" width="100%" height="50" style="opacity: 0.5;" alt="Divider" />
+</div>
+
+<br/>
+
 ### 📊 **GitHub Activity**
 
 <div align="center">
@@ -62,6 +82,12 @@
   <img height="160em" src="https://github-readme-stats.vercel.app/api?username=Adi-Baba&theme=tokyonight&show_icons=true&hide_border=true&count_private=true&include_all_commits=true" />
   <img height="160em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Adi-Baba&theme=tokyonight&show_icons=true&hide_border=true&layout=compact" />
   </a>
+</div>
+
+<br/>
+
+<div align="center">
+  <img src="https://raw.githubusercontent.com/Adi-Baba/Adi-Baba/main/assets/background.svg" width="100%" height="50" style="opacity: 0.5;" alt="Divider" />
 </div>
 
 <br/>
@@ -78,4 +104,8 @@
   </a>
 </div>
 
-<br/><br/>
+<br/>
+
+<div align="center">
+  <img src="https://raw.githubusercontent.com/Adi-Baba/Adi-Baba/main/assets/background.svg" width="100%" alt="Footer Background" />
+</div>
