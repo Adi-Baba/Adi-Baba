@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://cdn.jsdelivr.net/gh/Adi-Baba/Adi-Baba@main/assets/header.svg" width="100%" alt="Header" />
+<img src="https://raw.githubusercontent.com/Adi-Baba/Adi-Baba/main/assets/header.svg" width="100%" alt="Header" />
 
 </div>
 
@@ -10,24 +10,24 @@
   <tr>
     <td align="center" width="50%">
       <a href="https://github.com/Adi-Baba/PLTM">
-        <img src="https://cdn.jsdelivr.net/gh/Adi-Baba/Adi-Baba@main/assets/card_pltm.svg" width="100%" />
+        <img src="https://raw.githubusercontent.com/Adi-Baba/Adi-Baba/main/assets/card_pltm.svg" width="100%" />
       </a>
     </td>
     <td align="center" width="50%">
       <a href="https://github.com/Adi-Baba/securiqr">
-         <img src="https://cdn.jsdelivr.net/gh/Adi-Baba/Adi-Baba@main/assets/card_securiqr.svg" width="100%" />
+         <img src="https://raw.githubusercontent.com/Adi-Baba/Adi-Baba/main/assets/card_securiqr.svg" width="100%" />
       </a>
     </td>
   </tr>
   <tr>
     <td align="center" width="50%">
       <a href="https://github.com/Adi-Baba/FluxZero">
-        <img src="https://cdn.jsdelivr.net/gh/Adi-Baba/Adi-Baba@main/assets/card_fluxzero.svg" width="100%" />
+        <img src="https://raw.githubusercontent.com/Adi-Baba/Adi-Baba/main/assets/card_fluxzero.svg" width="100%" />
       </a>
     </td>
     <td align="center" width="50%">
       <a href="https://github.com/Adi-Baba/Bhojya">
-        <img src="https://cdn.jsdelivr.net/gh/Adi-Baba/Adi-Baba@main/assets/card_bhojya.svg" width="100%" />
+        <img src="https://raw.githubusercontent.com/Adi-Baba/Adi-Baba/main/assets/card_bhojya.svg" width="100%" />
       </a>
     </td>
   </tr>
