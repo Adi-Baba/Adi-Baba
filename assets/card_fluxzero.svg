@@ -5,72 +5,16 @@
       <stop offset="50%" style="stop-color:#FF6F00;stop-opacity:1" />
       <stop offset="100%" style="stop-color:#D50000;stop-opacity:1" />
     </linearGradient>
-    
-    <filter id="glow">
-      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
-      <feMerge>
-        <feMergeNode in="coloredBlur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
-    
-    <filter id="glass">
-      <feGaussianBlur in="SourceGraphic" stdDeviation="0" />
-      <feComponentTransfer>
-        <feFuncA type="discrete" tableValues="1 1" />
-      </feComponentTransfer>
-    </filter>
-    
-    <radialGradient id="glass-highlight">
-      <stop offset="0%" style="stop-color:white;stop-opacity:0.15" />
-      <stop offset="100%" style="stop-color:white;stop-opacity:0" />
-    </radialGradient>
-    
     <style>
-      .text-title { 
-        font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif; 
-        font-size: 28px; 
-        font-weight: 700; 
-        fill: white; 
-        letter-spacing: -0.5px;
-      }
-      .text-desc { 
-        font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif; 
-        font-size: 14px; 
-        fill: rgba(255,255,255,0.92); 
-        font-weight: 400;
-      }
-      .text-tech { 
-        font-family: 'Consolas', 'Monaco', monospace; 
-        font-size: 12px; 
-        fill: #FF8A80; 
-        font-weight: 500;
-      }
-      .card-bg { 
-        fill: rgba(255, 255, 255, 0.04); 
-        stroke: rgba(255, 255, 255, 0.12); 
-        stroke-width: 1.5;
-      }
-      .orbit { 
-        fill: none; 
-        stroke: #FF8A80; 
-        stroke-width: 2; 
-        opacity: 0.7; 
-      }
-      .electron { 
-        fill: #FFF; 
-        filter: url(#glow);
-      }
-      .nucleus {
-        fill: #FF3D00;
-        filter: url(#glow);
-      }
-      .blob-1 { 
-        animation: pulse-1 6s infinite ease-in-out; 
-      }
-      .blob-2 { 
-        animation: pulse-2 8s infinite ease-in-out; 
-      }
+      .text-title { font-family: 'Segoe UI', sans-serif; font-size: 28px; font-weight: bold; fill: white; }
+      .text-desc { font-family: 'Segoe UI', sans-serif; font-size: 14px; fill: rgba(255,255,255,0.9); }
+      .text-tech { font-family: 'Consolas', monospace; font-size: 12px; fill: #FF8A80; }
+      .card-bg { fill: rgba(255, 255, 255, 0.03); stroke: rgba(255, 255, 255, 0.1); stroke-width: 1; }
+      .orbit { fill: none; stroke: #FF8A80; stroke-width: 2; opacity: 0.7; }
+      .electron { fill: #FFF; }
+      .nucleus { fill: #FF3D00; }
+      .blob-1 { animation: pulse-1 6s infinite ease-in-out; }
+      .blob-2 { animation: pulse-2 8s infinite ease-in-out; }
       @keyframes pulse-1 {
         0%, 100% { opacity: 0.15; transform: scale(1) translate(0, 0); }
         50% { opacity: 0.25; transform: scale(1.15) translate(5px, -5px); }
@@ -90,10 +34,7 @@
   <circle cx="320" cy="60" r="70" fill="#FF6F00" opacity="0.12" class="blob-2" />
 
   <!-- Glass Card Surface -->
-  <rect x="10" y="10" width="380" height="180" rx="12" class="card-bg" filter="url(#glass)" />
-  
-  <!-- Glass highlight overlay -->
-  <ellipse cx="200" cy="0" rx="150" ry="80" fill="url(#glass-highlight)" />
+  <rect x="10" y="10" width="380" height="180" rx="12" class="card-bg" />
 
   <!-- Icon: Quantum Atom with Flowing Particles -->
   <g transform="translate(65, 85)">
