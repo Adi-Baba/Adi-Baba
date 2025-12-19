@@ -1,18 +1,14 @@
 <svg width="400" height="200" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <linearGradient id="grad_flux" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#FF3D00;stop-opacity:1" />
-      <stop offset="50%" style="stop-color:#FF6F00;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#D50000;stop-opacity:1" />
+      <stop offset="0%" style="stop-color:#FF6B35;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#E63946;stop-opacity:1" />
     </linearGradient>
     <style>
       .text-title { font-family: 'Segoe UI', sans-serif; font-size: 28px; font-weight: bold; fill: white; }
       .text-desc { font-family: 'Segoe UI', sans-serif; font-size: 14px; fill: rgba(255,255,255,0.9); }
       .text-tech { font-family: 'Consolas', monospace; font-size: 12px; fill: #FF8A80; }
       .card-bg { fill: rgba(255, 255, 255, 0.03); stroke: rgba(255, 255, 255, 0.1); stroke-width: 1; }
-      .orbit { fill: none; stroke: #FF8A80; stroke-width: 2; opacity: 0.7; }
-      .electron { fill: #FFF; }
-      .nucleus { fill: #FF3D00; }
       .blob { animation: float 9s infinite ease-in-out; }
       @keyframes float {
         0%, 100% { transform: translate(0, 0); }
@@ -26,40 +22,31 @@
 
   <!-- Animated Ambient Glow -->
   <circle cx="320" cy="150" r="90" fill="url(#grad_flux)" opacity="0.2" class="blob" />
-  <circle cx="60" cy="40" r="50" fill="#FF3D00" opacity="0.1" />
+  <circle cx="60" cy="40" r="50" fill="#FF6B35" opacity="0.1" />
 
   <!-- Glass Card Surface -->
   <rect x="10" y="10" width="380" height="180" rx="12" class="card-bg" />
 
-  <!-- Icon: Quantum Atom with Flowing Particles -->
+  <!-- Icon: Quantum Atom -->
   <g transform="translate(30, 40)">
      <!-- Central Nucleus -->
-     <circle cx="50" cy="50" r="8" class="nucleus" />
+     <circle cx="50" cy="50" r="7" fill="#E63946" />
      
-     <!-- Orbital Paths -->
-     <ellipse cx="50" cy="50" rx="35" ry="12" transform="rotate(0 50 50)" class="orbit" />
-     <ellipse cx="50" cy="50" rx="35" ry="12" transform="rotate(60 50 50)" class="orbit" />
-     <ellipse cx="50" cy="50" rx="35" ry="12" transform="rotate(120 50 50)" class="orbit" />
+     <!-- Orbital Rings -->
+     <ellipse cx="50" cy="50" rx="30" ry="15" fill="none" stroke="#FF8A80" stroke-width="2" opacity="0.8" />
+     <ellipse cx="50" cy="50" rx="30" ry="15" transform="rotate(60 50 50)" fill="none" stroke="#FF8A80" stroke-width="2" opacity="0.8" />
+     <ellipse cx="50" cy="50" rx="30" ry="15" transform="rotate(-60 50 50)" fill="none" stroke="#FF8A80" stroke-width="2" opacity="0.8" />
      
      <!-- Electrons -->
-     <circle cx="85" cy="50" r="3" class="electron" transform="rotate(30 50 50)">
-       <animateTransform attributeName="transform" type="rotate" 
-         from="30 50 50" to="390 50 50" dur="4s" repeatCount="indefinite"/>
-     </circle>
-     <circle cx="85" cy="50" r="3" class="electron" transform="rotate(150 50 50)">
-       <animateTransform attributeName="transform" type="rotate" 
-         from="150 50 50" to="510 50 50" dur="4s" repeatCount="indefinite"/>
-     </circle>
-     <circle cx="85" cy="50" r="3" class="electron" transform="rotate(270 50 50)">
-       <animateTransform attributeName="transform" type="rotate" 
-         from="270 50 50" to="630 50 50" dur="4s" repeatCount="indefinite"/>
-     </circle>
+     <circle cx="80" cy="50" r="4" fill="white" opacity="0.9" />
+     <circle cx="35" cy="65" r="4" fill="white" opacity="0.9" />
+     <circle cx="35" cy="35" r="4" fill="white" opacity="0.9" />
   </g>
 
   <!-- Text Content -->
   <text x="150" y="60" class="text-title">FluxZero</text>
   <text x="150" y="90" class="text-desc">Game AI & Physics Engine</text>
-  <text x="150" y="110" class="text-desc">Fluid Tree Search Algorithm</text>
+  <text x="150" y="110" class="text-desc">with Fluid Tree Search.</text>
   
   <!-- Tech Stack -->
   <text x="30" y="160" class="text-tech">Python • C++ • Fortran</text>
