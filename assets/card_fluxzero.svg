@@ -45,7 +45,7 @@
 
   <!-- Text Content -->
   <text x="150" y="60" class="text-title">FluxZero</text>
-  <text x="150" y="90" class="text-desc">Game AI & Physics Engine</text>
+  <text x="150" y="90" class="text-desc">Game AI &amp; Physics Engine</text>
   <text x="150" y="110" class="text-desc">with Fluid Tree Search.</text>
   
   <!-- Tech Stack -->
