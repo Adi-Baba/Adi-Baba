@@ -122,7 +122,7 @@
 
   <!-- Text Content -->
   <text x="155" y="65" class="text-title">FluxZero</text>
-  <text x="155" y="93" class="text-desc">Game AI & Physics Engine</text>
+  <text x="155" y="93" class="text-desc">Game AI &amp; Physics Engine</text>
   <text x="155" y="115" class="text-desc">Fluid Tree Search Algorithm</text>
   
   <!-- Tech Stack -->
