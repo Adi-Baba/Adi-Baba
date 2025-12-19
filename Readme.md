@@ -10,24 +10,24 @@
   <tr>
     <td align="center" width="50%">
       <a href="https://github.com/Adi-Baba/PLTM">
-        <img src="./assets/card_pltm.svg" width="100%" />
+        <img src="./assets/card_pltm.svg?v=2" width="100%" />
       </a>
     </td>
     <td align="center" width="50%">
       <a href="https://github.com/Adi-Baba/securiqr">
-         <img src="./assets/card_securiqr.svg" width="100%" />
+         <img src="./assets/card_securiqr.svg?v=2" width="100%" />
       </a>
     </td>
   </tr>
   <tr>
     <td align="center" width="50%">
       <a href="https://github.com/Adi-Baba/FluxZero">
-        <img src="./assets/card_fluxzero.svg" width="100%" />
+        <img src="./assets/card_fluxzero.svg?v=2" width="100%" />
       </a>
     </td>
     <td align="center" width="50%">
       <a href="https://github.com/Adi-Baba/Bhojya">
-        <img src="./assets/card_bhojya.svg" width="100%" />
+        <img src="./assets/card_bhojya.svg?v=2" width="100%" />
       </a>
     </td>
   </tr>
